@@ -1,0 +1,33 @@
+[
+    {
+        "id": 1,
+        "title": "O Hobbit",
+        "launchYear": "1937",
+        "available": true,
+        "publiser": "",
+        "gender": "adventure",
+        "writer": "J. R. R. Tolkien",
+        "pages": "335"
+    },
+    {
+        "id": 2,
+        "title": "Blade Runner",
+        "launchYear": "1968",
+        "available": false,
+        "publiser": "",
+        "gender": "sci-fi",
+        "writer": "Philip K. Dick",
+        "pages": "316"
+    },
+    {
+        "id": 3,
+        "title": "Frankenstein",
+        "launchYear": "1818",
+        "available": true,
+        "gender": "sci-fi",
+        "publiser": "",
+        "writer": "Mary Shelley",
+        "pages": "250"
+        
+    }
+]

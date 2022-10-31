@@ -249,13 +249,19 @@ Na programação, existem tipos primários, que são responsáveis por definir o
 
 ##  🎓 Para Casa
   
-- Rota GET: Crie um rota que encontre um livro pelo titulo
-- Rota de Patch: Crie um rota que atualize as informações de um determinado livro utilizando de parâmetro o ID
-- Rota de Delete: Crie um rota que delete um livro cadastrado pelo ID
-- Rota GET:Crie um rota que encontre uma editora pelo estado da sede
-- Rota de POST: Crie um rota que crie uma nova editora
-- Rota de PATCH: Crie um rota que atualize as informações de um editora utilizando de parâmetro o ID 
+Oie bonitas, como sabem a tarefa mudou, então vamos lá:
+- Entre no arquivo do README, dentro da pasta principal (on19-tet-s12-bd) 
+- E responda COM SUAS PALAVRAS o que você entendeu da aula de sabado:
+  * pode usar girias, pajuba, aleatorias, trazer imagens... você escolhe
+  * pode ser sintese, textão, mapa conceitual... 
+  * me explique principalmente o que vocêentendeu de Banco de Dados, SQL, NoSQL e de Mongo
+  * caso queira pode me falar tambem onde teve mais duvidas e qual parte gostariam que eu revesse na semana 13    
+  
+  obs: se quiser adicione um campo de observação sobre tematicas das ultimas semanas (de outras aulas) que voce
+  teve mais dificuldade. Vamos revisa-las.
 
+  * Na sexta faremos uma atividade oral onde irei fazer perguntas para turma, nem todas precisam participar, mas 
+  eu adoraria se vocês participassem. POR FAVOR
 ##  Minhas redes sociais
  - [LINKEDIN](https://www.linkedin.com/in/gaia-maria/)
  - [GITHUB](https://github.com/Gaia-Maria)

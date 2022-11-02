@@ -1,13 +1,15 @@
-const express = require("express"); //importo o express
+const express = require("express"); // importo o express
+const cors = require("cors"); // importo o cors
+const mongoose = require("./database/mongooseConnect"); // conecto a pasta do Mongo
+const booksRoutes = require("./routes/booksRoute"); // conecto as rotas
 
-const app = express(); // executo o express
+const app = express();
 
-app.use(express.json()); // uso o body parse
+app.use(express.json());
+app.use(cors());
+mongoose.connect();
 
-// importe da continuação de rotas podcast
-const booksRoute = require("./routes/booksRoute");
-
-app.use("/library/books", booksRoute); // crio uma rota raiz
+app.use("/library/books", booksRoutes); // crio uma rota raiz
 
 // exportando para usar o server.js
 module.exports = app;

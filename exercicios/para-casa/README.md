@@ -25,8 +25,9 @@ Depois passamos a utilizar as **fitas miniDV**, como o nome já diz elas eram me
 Enfim chegou o sistema de **armazenamento digital**, onde só precisávamos de um computador para realizar a pesquisa por nome, data, ou palavras chave, e o conteúdo já estava disponível para ser utilizado.
 *Sabe o que esses tipos de arquivamento têm em comum?*
 Todas são consideradas **Bando de dados**, ou seja um conjunto de informações guardados em um local especifico, seja físico ou digital, que você pode consultar a qualquer momento.
+
  <p align="center">
- <img src="./assets/exemplo-banco-de-dados.png" alt="exemplo banco de dados" width="500">
+ <img src="https://github.com/shiteles/on19-tet-s12-bd/blob/main/assets/exemplo-banco-de-dados.png" alt="exemplo banco de dados" width="500">
 </p>
 
 * **SQL**

@@ -8,7 +8,7 @@
     "start": "node server.js"
   },
   "keywords": [],
-  "author": "",
+  "author": "Shirlene Teles",
   "license": "ISC",
   "dependencies": {
     "cors": "^2.8.5",

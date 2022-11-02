@@ -20,9 +20,13 @@ Oie bonitas, como sabem a tarefa mudou, então vamos lá:
 * **Banco de Dados**
 
 Para explicar sobre banco de dados, vou contar um pouco da minha experiência como arquivista em emissoras de TV.
+
 Há alguns anos atrás usávamos **fitas Betacam** para armazenar todo o material produzido na emissora. Porém existia os seguintes problemas: espaço físico porque as fitas eram grandes e a dificuldade de você localizar o material, imagina que para encontrar uma matéria que esta no meio precisávamos rebobinar a fita ate o chegar no ponto desejado.
+
 Depois passamos a utilizar as **fitas miniDV**, como o nome já diz elas eram menores, porém, mesmo anotando a minutagem de cada conteúdo, vamos combinar que dava pra melhorar né.
+
 Enfim chegou o sistema de **armazenamento digital**, onde só precisávamos de um computador para realizar a pesquisa por nome, data, ou palavras chave, e o conteúdo já estava disponível para ser utilizado.
+
 *Sabe o que esses tipos de arquivamento têm em comum?*
 Todas são consideradas **Bando de dados**, ou seja um conjunto de informações guardados em um local especifico, seja físico ou digital, que você pode consultar a qualquer momento.
 

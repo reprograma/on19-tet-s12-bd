@@ -1,16 +1,18 @@
-const mongoose = require ('mongoose')
+
+const mongoose = require("mongoose");
 
 const connect = async () => {
-    try {
-        mongoose.connect ("mongodb+srv://alarconkell:skyler16@cluster0.rvz0u7u.mongodb.net/?retryWrites=true&w=majority/rlibrary", {
-                                 //  minha senha     ^      ^|^      ^ nome do cluster                                      ^ nome da pasta no VS (SEM HIFEM)
-            userNewUrlParser: true,
-            userUnifiedTopology: true
-        })
-        console.log ('DB conectada com sucesso')
-    } catch (error){
-        console.log (error)
-    }
-}
+  try {
+    mongoose.connect("mongodb+srv://GaiaMaria8:gaia1999@cluster0.btpmh.mongodb.net/rlibrary", {
+      useNewUrlParser: true,
+      useUnifiedTopology: true,
+    });
+    console.log("Database connected");
+  } catch (error) {
+    console.log(error);
+  }
+};
 
-module.exports = {connect}
+module.exports = {
+  connect,
+};

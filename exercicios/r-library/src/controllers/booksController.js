@@ -10,12 +10,8 @@ const getAllBooks = async (req, res) => {
 };
 
 const getBookById = async (req, res) => {
-  try {
-    const { id } = req.params;
-    const findBook = await BooksModel.findById(id);
-    if (!findBook.length) {
-      return res.status(404).json({ message: "ID not found" });
-    }
+  try {   
+    const findBook = await BooksModel.findById(req.params.id);
     res.status(200).json(findBook);
   } catch (error) {
     res.status(500).json({ message: error.message });
@@ -104,4 +100,5 @@ module.exports = {
   addNewBook,
   updateBookById,
   deleteBook,
+};
 };

@@ -12,7 +12,6 @@ Como os dados não são armazenados de maneira relacional eles são dividos em c
 
 MongoDB é uma plataforma gratuita para criação de DB e armazenanamento de dados.
 Ela é usada para desenvolvimento de sistemas e API's.
-
 ---
 
 Terminou o exercício? Dá uma olhada nessa checklist e confere se tá tudo certinho, combinado?!

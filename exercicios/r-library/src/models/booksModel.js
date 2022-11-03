@@ -23,11 +23,11 @@ const BookSchema = new mongoose.Schema(
       type: String,
       required: true,
     },
-    gender: {
+    genre: {
       type: String,
       required: true,
     },
-    writer: {
+    author: {
       type: String,
       required: true,
     },

@@ -9,7 +9,7 @@ const getAllBooks = async (req, res) => {
   };
 };
 
-const getBookById = async (req, res) => {
+const getBookByID = async (req, res) => {
   try {   
     const findBook = await BooksModel.findById(req.params.id);
     res.status(200).json(findBook);
@@ -25,8 +25,8 @@ const addNewBook = async (req, res) => {
       launchYear,
       available,
       publisher,
-      gender,
-      writer,
+      genre,
+      author,
       pages
     } = req.body;
 
@@ -35,8 +35,8 @@ const addNewBook = async (req, res) => {
       launchYear,
       available,
       publisher,
-      gender,
-      writer,
+      genre,
+      author,
       pages
     });
     const savedBook = await newBook.save();
@@ -49,15 +49,15 @@ const addNewBook = async (req, res) => {
   };
 };
 
-const updateBookById = async (req, res) => {
+const updateBookByID = async (req, res) => {
   try {
     const {
       title,
       launchYear,
       available,
       publisher,
-      gender,
-      writer,
+      genre,
+      author,
       pages,
     } = req.body;
     const updateBook = await BooksModel.findByIdAndUpdate(
@@ -67,8 +67,8 @@ const updateBookById = async (req, res) => {
         launchYear,
         available,
         publisher,
-        gender,
-        writer,
+        genre,
+        author,
         pages,
       }
     );
@@ -96,8 +96,8 @@ const deleteBook = async (req, res) => {
 
 module.exports = {
   getAllBooks,
-  getBookById,
+  getBookByID,
   addNewBook,
-  updateBookById,
+  updateBookByID,
   deleteBook,
 };

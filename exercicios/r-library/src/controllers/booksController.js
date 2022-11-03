@@ -13,7 +13,7 @@ const getBookById = async (req, res) => {
   try {
     const { id } = req.params;
     const findBook = await BooksModel.findById(id);
-    if (!findBook.length) {
+    if (findBook == null) {
       return res.status(404).json({ message: "ID not found" });
     }
     res.status(200).json(findBook);
@@ -45,7 +45,7 @@ const addNewBook = async (req, res) => {
     });
     const savedBook = await newBook.save();
     res
-      .status(200)
+      .status(201)
       .json({ message: "New Book added successfully!", savedBook });
   } catch (error) {
     console.error(error);

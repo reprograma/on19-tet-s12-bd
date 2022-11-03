@@ -2,6 +2,11 @@
 
 ## Banco de Dados
 
+![](https://www.chefbob.com.br/wp-content/webp-express/webp-images/doc-root/wp-content/uploads/2021/05/2021-05-12-como-deixar-os-gatos-mais-tranquilos.jpg.webp)
+
+
+
+
 Oie bonitas, como sabem a tarefa mudou, então vamos lá:
 - Entre no arquivo do README, dentro da pasta principal (on19-tet-s12-bd) 
 - E responda COM SUAS PALAVRAS o que você entendeu da aula de sabado:

@@ -1,99 +1,105 @@
-const books = require("../models/books.json");
+const BooksModel = require("../models/booksModel");
 
-const getAllBooks = (request, response) => {
+const getAllBooks = async (req, res) => {
   try {
-    response.status(200).json([
-      {
-        books: books,
-      },
-    ]);
-  } catch (err) {
-    response.status(500).send({ message: "Erro no server" });
+    const allBooks = await BooksModel.find({}, null);
+    res.status(200).json(allBooks);
+  } catch {
+    res.status(500).json({ message: error.message });
+  };
+};
+
+const getBookById = async (req, res) => {
+  try {
+   
+    const findBook = await BooksModel.findById(req.params.id);
+    res.status(200).json(findBook);
+  } catch (error) {
+    res.status(500).json({ message: error.message });
   }
 };
 
-const getBooksById = (request, response) => {
-  const booksRequest = request.params.id;
-  const booksFilter = books.filter((books) => books.id == booksRequest);
+const addNewBook = async (req, res) => {
+  try {
+    const {
+      title,
+      launchYear,
+      available,
+      publisher,
+      gender,
+      writer,
+      pages
+    } = req.body;
 
-  if (booksFilter.length > 0) {
-    response.status(200).send(booksFilter);
-  } else {
-    response.status(404).send([
-      {
-        message: "book not found"
-      },
-    ]);
-  }
+    const newBook = new BooksModel({
+      title,
+      launchYear,
+      available,
+      publisher,
+      gender,
+      writer,
+      pages
+    });
+    const savedBook = await newBook.save();
+    res
+      .status(200)
+      .json({ message: "New Book added successfully!", savedBook });
+  } catch (error) {
+    console.error(error);
+    res.status(500).json({ message: error.message });
+  };
 };
 
-const addNewBook = (request, response) => {
+const updateBookById = async (req, res) => {
   try {
-    let titleRequest = request.body.title;
-    let launchYearRequest = request.body.launchYear;
-    let availableRequest = request.body.available;
-    let publisherRequest = request.body.publisher;
-    let genderRequest = request.body.gender;
-    let writerRequest = request.body.writer;
-    let pagesRequest = request.body.pages;
+    const {
+      title,
+      launchYear,
+      available,
+      publisher,
+      gender,
+      writer,
+      pages,
+    } = req.body;
+    const updateBook = await BooksModel.findByIdAndUpdate(
+      req.params.id,
+      {
+        title,
+        launchYear,
+        available,
+        publisher,
+        gender,
+        writer,
+        pages,
+      }
+    );
+    res.status(200).json(updateBook);
+  } catch {
+  console.error(error);
+  res.status(500).json({ message: error.message });
+}
+};
 
-    let newBooks = {
-      id: Math.floor(Date.now() * Math.random()).toString(36),
-      title: titleRequest,
-      launchYear: launchYearRequest,
-      available: availableRequest,
-      publisher: publisherRequest,
-      gender: genderRequest,
-      writer: writerRequest,
-      pages: pagesRequest,
+const deleteBook = async (req, res) => {
+  try {
+    const { id } = req.params;
+    const findBooks = await BooksModel.findById(id);
+
+    if (findBooks == null) {
+      return res.status(404).json({ message: `Book with id ${id} not found` })
     };
-
-    books.push(newBooks);
-    response.status(201).json([
-      {
-        message: "Book successfully registered",
-        newBooks,
-      },
-    ]);
-  } catch (err) {
-    console.log(err);
-    response.status(500).send([
-      {
-        message: "Server Error",
-      },
-    ]);
-  }
+    await findBooks.remove();
+    res.status(200).json({ message: `Book with id ${id} was successfully deleted` });
+  } catch (error) {
+    res.status(500).json({ message: error.message });
+  };
 };
-
-const deleteBooks = (request, response) => {
-  const idRequest = request.params.id;
-  const indiceBooks = books.findIndex((books) => books.id == idRequest);
-
-  books.splice(indiceBooks, 1);
-
-  if (indiceBooks) {
-    response.status(200).json([
-      {
-        message: "Book deleted",
-        "book": idRequest,
-        books,
-      },
-    ]);
-  } else {
-    response.status(404).send([
-      {
-        message: "book not deleted",
-      },
-    ]);
-  }
-};
-
 
 module.exports = {
   getAllBooks,
-  getBooksById,
+  getBookById,
   addNewBook,
-  addbooks,
-  updateBooks,
-  deleteBooks,
+  updateBookById,
+  deleteBook,
 };
+

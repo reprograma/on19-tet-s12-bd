@@ -1,22 +1,47 @@
 # Exercício de Casa 🏠 
 
 ## Banco de Dados
+ - Oque eu entendi sobre banco de dados, que veio de uma necessidade de armazenar grandes quantidades de dados á um custo mais acessivel. 
 
-- Rota GET: Crie um rota que encontre um livro pelo titulo
-- Rota de Patch: Crie um rota que atualize as informações de um determinado livro utilizando de parâmetro o ID
-- Rota de Delete: Crie um rota que delete um livro cadastrado pelo ID
-- Rota GET:Crie um rota que encontre uma editora pelo estado da sede
-- Rota de POST: Crie um rota que crie uma nova editora
-- Rota de PATCH: Crie um rota que atualize as informações de um editora utilizando de parâmetro o ID 
+ ##  SQL
+
+ - Não conseguir entender muito sobre... No que eu entendi é que o SQL é uma forma 
+   conseguir controlar e organizar dados dentro de uma ou mais tabelas.
+
+   ## NOSQL
+
+   - Entendo que ao contrario do SQL, eu consigo fazer consulta e manipular dentro da linguagem na qual estou desenvolvendo como Js.
+
+
+   ## Mongo,  Database
+
+   - Sobre Mongo e  Database preciso da aula da proxima semana para conseguir entender melhor.
+
+   ## Schema
+
+   Ele é ultilizado para definir a necessidade de cada informação montada dentro de uma banco de dados.
+
+   ## Rotas
+
+  - Meios de pegar e mandar informações do banco de dados.
+   GET: tras informações solicitadas de acordo com a rota 
+   POST: Cria um nova informação 
+   PATCH: Atualiza uma informação necessaria, sem alterar o body
+   PUT: Atualiza uma ou mais informações 
+   DELETE: Usado para apargar informações 
+
+   ## Model
+
+   - Guarda as informações de rota
+   
+
+
+
+
+
+
+
+
+ - 
 
 ---
-
-Terminou o exercício? Dá uma olhada nessa checklist e confere se tá tudo certinho, combinado?!
-
-- [ ] Fiz o fork do repositório.
-- [ ] Clonei o fork na minha máquina (`git clone url-do-meu-fork`).
-- [ ] Resolvi o exercício.
-- [ ] Adicionei as mudanças. (`git add .` para adicionar todos os arquivos, ou `git add nome_do_arquivo` para adicionar um arquivo específico)
-- [ ] Commitei a cada mudança significativa ou na finalização do exercício (`git commit -m "Mensagem do commit"`)
-- [ ] Pushei os commits na minha branch (`git push origin nome-da-branch`)
-- [ ] Criei um Pull Request seguindo as orientaçoes que estao nesse [documento](/exercicios/para-casa/instrucoes-pull-request.md).

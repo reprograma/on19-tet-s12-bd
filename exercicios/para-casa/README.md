@@ -15,6 +15,8 @@ Oie bonitas, como sabem a tarefa mudou, então vamos lá:
   na sexta faremos uma atividade oral onde irei fazer perguntas para turma, nem todas precisam participar, mas 
   eu adoraria se vocês participassem. POR FAVOR 
 
+## Mapa Conceitual - MongoBD
+![Alt text](https://github.com/mellyssaStephanny/on19-tet-s12-bd/blob/main/exercicios/para-casa/MongoDB.png)
 
 ---
 

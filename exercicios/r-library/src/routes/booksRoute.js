@@ -8,9 +8,9 @@ const router = express.Router();
 // router. metodo http (rota, funcao)
 
 router.get("/all", controller.getAllBooks);
-router.get("/:id", controller.getBooksById);
+router.get("/:id", controller.getBookById);
 router.post("/new", controller.addNewBook);
-router.put("/:id", controller.updateBooks);
-router.delete("/:id", controller.deleteBooks);
+router.put("/:id", controller.updateBookById);
+router.delete("/:id", controller.deleteBook);
 
 module.exports = router;

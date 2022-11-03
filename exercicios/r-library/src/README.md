@@ -8,7 +8,7 @@
 - Arquivo é tudo aquilo que uma entidade/pessoa/familia produz que tem a natureza de INFORMAÇÃO;
 - O arquivo é a arrumação de coisas antigas;
 - Os arquivos são feitos para registrar e difundir informações; eles são feitos e  disponibilizados de acordo com as técnicas existentes em cada época;
-- ARQUIVOS são DADOS.
+- ARQUIVOS são DADOS. ....
 
 Em conclusão, banco de dados são organizações de informações para serem consultadas a qualquer tempo, para revermos informações. 
 

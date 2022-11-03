@@ -266,3 +266,16 @@ Oie bonitas, como sabem a tarefa mudou, então vamos lá:
  - [LINKEDIN](https://www.linkedin.com/in/gaia-maria/)
  - [GITHUB](https://github.com/Gaia-Maria)
 
+# Atividade da semana 12
+
+## Breve resumo sobre banco de dados
+
+O presente documento tem como objetivo apresentar um breve resumo sobre banco de dados, sendo assim a primeira pergunta que devo responder é o que é banco de dados?
+
+    - Um banco de dados é um acervo organizado de informações, seu uso aplicado a um sistema de gerenciamento de banco de dados (DBMS) facilita o acesso rápido e fácil de uma grande quantidade de dados. 
+
+Visitando o website oficial da Oracle entendi que há diversos tipos diferentes de bancos de dados, de bancos de dados relacionais até bancos de dados autonômos. Explorarei nesse resumo apenas os conceitos de SQL e NoSQL, visto que essas foram as informações apresentandas na aula. 
+    
+    - SQL: É uma linguagem de programação usada para gerenciar a maioria dos banco de dados relacionais. Usando SQL podemos solicitar ou manipular informações do banco de dados. 
+
+    - NoSQL: O termo NoSQL se refere aos bancos de dados não relacionais, diferentes dos bancos de dados relacionais o NoSQL funcionam de forma mais flúida e sem o uso de tabelas. Alguns beneficios do NoSQL são: flexibilidade, escalabilidade, alta performance e alta funcionabilidade. 

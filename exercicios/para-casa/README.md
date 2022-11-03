@@ -2,12 +2,16 @@
 
 ## Banco de Dados
 
-- Rota GET: Crie um rota que encontre um livro pelo titulo
-- Rota de Patch: Crie um rota que atualize as informações de um determinado livro utilizando de parâmetro o ID
-- Rota de Delete: Crie um rota que delete um livro cadastrado pelo ID
-- Rota GET:Crie um rota que encontre uma editora pelo estado da sede
-- Rota de POST: Crie um rota que crie uma nova editora
-- Rota de PATCH: Crie um rota que atualize as informações de um editora utilizando de parâmetro o ID 
+## SQL
+
+SQL é uma forma de montar a DB de maneira relacional. 
+SQL é uma linguagem e consegue com facilidade acessar, modificar, criar ou apagar dados da DB, alem de criar planilhas e procedimentos para os dados
+
+noSQL é uma forma de montar a DB de maneira não-relaciona, o que significa que a linguagem SQL não será usada exclusivamente e os dados não serão armazenados de maneira relacional.
+Como os dados não são armazenados de maneira relacional eles são dividos em categorias como 'documentos' ou 'wide-column' que armazena documentação e tabelas/planilhas respectivamente
+
+MongoDB é uma plataforma gratuita para criação de DB e armazenanamento de dados.
+Ela é usada para desenvolvimento de sistemas e API's.
 
 ---
 

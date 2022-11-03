@@ -10,7 +10,12 @@ const getAllBooks = async (req, res) => {
 };
 
 const getBookById = async (req, res) => {
+  try {
+   
+
+const getBookById = async (req, res) => {
   try {   
+
     const findBook = await BooksModel.findById(req.params.id);
     res.status(200).json(findBook);
   } catch (error) {

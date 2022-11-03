@@ -1,4 +1,9 @@
+
+//rotas
+const controller = require("../controllers/booksController");
+=======
 const controller = require("../controllers/booksController"); // conecto ao controller
+
 
 const express = require("express"); // importo o express
 
@@ -13,4 +18,8 @@ router.post("/new", controller.addNewBook);
 router.patch("/:id", controller.updateBookById);
 router.delete("/:id", controller.deleteBook);
 
+
+module.exports = router;
+=======
 module.exports = router; //exporto as rotas
+

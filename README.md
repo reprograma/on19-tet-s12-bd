@@ -9,7 +9,7 @@ Por exemplo, me cadastro no site do mercado livre porque quero comprar um chuvei
 
 
 <h1 align="center">
-  <img src="assets/sql.png" alt="sql" width="500">
+  <img src="assets/SQL.png" alt="sql" width="500">
 </h1>
 
 ### SQL

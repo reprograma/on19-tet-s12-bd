@@ -1,8 +1,10 @@
 const mongoose = require("mongoose");
+require('dotenv').config();
+const MongoPass = process.env.MongoDB;
 
 const connect = async () => {
   try {
-    mongoose.connect("mongodb+srv://laumedeia:Anarquist4@cluster0.qkhsysp.mongodb.net/r-library", {
+    mongoose.connect(`mongodb+srv://${MongoPass}`, {
       useNewUrlParser: true,
       useUnifiedTopology: true,
     });

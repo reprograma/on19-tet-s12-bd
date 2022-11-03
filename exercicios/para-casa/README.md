@@ -16,6 +16,8 @@ Oie bonitas, como sabem a tarefa mudou, então vamos lá:
   eu adoraria se vocês participassem. POR FAVOR 
 
 
+
+
 ---
 
 Terminou o exercício? Dá uma olhada nessa checklist e confere se tá tudo certinho, combinado?!

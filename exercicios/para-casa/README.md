@@ -1,22 +1,24 @@
 # Exercício de Casa 🏠 
 
-## Banco de Dados
+## Banco de Dados - Resumo da aula:
+ Conteúdo:
+    - Banco de Dados
+    - Introdução a MongoDB
+    - MongoCompass, Shell e Robo3T
+ 
 
-- Rota GET: Crie um rota que encontre um livro pelo titulo
-- Rota de Patch: Crie um rota que atualize as informações de um determinado livro utilizando de parâmetro o ID
-- Rota de Delete: Crie um rota que delete um livro cadastrado pelo ID
-- Rota GET:Crie um rota que encontre uma editora pelo estado da sede
-- Rota de POST: Crie um rota que crie uma nova editora
-- Rota de PATCH: Crie um rota que atualize as informações de um editora utilizando de parâmetro o ID 
+- Arquivo:
+É um conjunto de documentos, surgiu da necessidade de organizar, registrar e compartilhar informações.
 
----
+- Banco de Dados:
+É uma coleção de dados estruturados (planilhas/tabelas) controlada por um sistema de gerenciamento de banco de dados (DBMS). 
+    > SQL: A linguagem SQL (Structured Query Language) é utilizada para realizar pesquisa, filtros e manipular os dados com banco de dados relacionais
+    > NoSQL: Os bancos de dados NoSQL (not only SQL) têm formato diferente das tabela relacionais e podem ser consultados em SQL ou em outras linguagens usando APIs
 
-Terminou o exercício? Dá uma olhada nessa checklist e confere se tá tudo certinho, combinado?!
-
-- [ ] Fiz o fork do repositório.
-- [ ] Clonei o fork na minha máquina (`git clone url-do-meu-fork`).
-- [ ] Resolvi o exercício.
-- [ ] Adicionei as mudanças. (`git add .` para adicionar todos os arquivos, ou `git add nome_do_arquivo` para adicionar um arquivo específico)
-- [ ] Commitei a cada mudança significativa ou na finalização do exercício (`git commit -m "Mensagem do commit"`)
-- [ ] Pushei os commits na minha branch (`git push origin nome-da-branch`)
-- [ ] Criei um Pull Request seguindo as orientaçoes que estao nesse [documento](/exercicios/para-casa/instrucoes-pull-request.md).
+- MongoDB:
+É um servidor de banco de dados orientado a documentos (NoSQL), organizado por meio de coleções, que contém documentos, e estes podem armazenar dados aninhados dentro de SCHEMAS e
+ter elementos de identificação únicas.
+    Existem 3 ferramentas utilizadas para a comunicação (pesquisa, filtros, análises...) com o MondoDB:
+    > Compass: Vizualizar planos de execução em estrutura de árvore/organograma divisão por níveis (somente na assinatura Enterprise e Profissional)
+    > Shell: Realizar a comunicação através do Terminal com linhas de comando
+    > Robo3T: Plataforma de interface com guias para gerenciar o MongoDB, contém o Shell com  acesso a linhas de comando

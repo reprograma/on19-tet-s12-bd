@@ -2,18 +2,27 @@
 
 ## Banco de Dados
 
-Oie bonitas, como sabem a tarefa mudou, então vamos lá:
-- Entre no arquivo do README, dentro da pasta principal (on19-tet-s12-bd) 
-- E responda COM SUAS PALAVRAS o que você entendeu da aula de sabado:
-  * pode usar girias, pajuba, aleatorias, trazer imagens... você escolhe
-  * pode ser sintese, textão, mapa conceitual... 
-  * me explique principalmente o que vocêentendeu de Banco de Dados, SQL, NoSQL e de Mongo
-  * caso queira pode me falar tambem onde teve mais duvidas e qual parte gostariam que eu revesse na semana 13  
-  obs: se quiser adicione um campo de observação sobre tematicas das ultimas semanas (de outras aulas) que voce
-  teve mais dificuldade. Vamos revisa-las.
 
-  na sexta faremos uma atividade oral onde irei fazer perguntas para turma, nem todas precisam participar, mas 
-  eu adoraria se vocês participassem. POR FAVOR 
+
+**Banco de dados**
+
+*Um "lugar" onde as informações são guardadas de forma organizada.*
+
+**SQL**
+
+*Uma linguagem que interage com banco de dados relacional; Cria tabelas, manipula dados e consulta dados.*
+
+**NoSQL**
+
+**MongodB**
+
+*é um banco de dados orientado a documentos que possui código aberto (open source) e foi projetado para armazenar uma grande escala de dados, além de permitir que se trabalhe de forma eficiente com grandes volumes.*
+
+
+
+
+
+
 
 
 ---

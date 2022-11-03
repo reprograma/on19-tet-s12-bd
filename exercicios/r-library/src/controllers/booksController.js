@@ -8,9 +8,14 @@ const getAllBooks = async (req, res) => {
     res.status(500).json({ message: error.message });
   };
 };
+
 const getBookById = async (req, res) => {
   try {
    
+
+const getBookById = async (req, res) => {
+  try {   
+
     const findBook = await BooksModel.findById(req.params.id);
     res.status(200).json(findBook);
   } catch (error) {

@@ -17,7 +17,7 @@ Existem diversos tipos de **SGBD**, os que destacamos foram: **SQL (relacional)*
 
 ### **Banco de Dados Relacionais**
 
-SQL (Standard Query Language) - É uma linguagem declarativa padrão para trabalhar com banco de dados relacionais. Literalmente uma linguagem padrão para realizar queries. 
+SQL (Structured Query Language) - É uma linguagem declarativa padrão para trabalhar com banco de dados relacionais. Literalmente uma linguagem padrão para realizar queries. 
 
 * Armazenam os dados em forma de tabelas (linhas e colunas);
 * As tabelas se relacionam entre si. 

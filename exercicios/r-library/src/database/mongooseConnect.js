@@ -1,8 +1,10 @@
 const mongoose = require("mongoose");
+require('dotenv').config();
+const MongoPass = process.env.MongoDB;
 
 const connect = async () => {
   try {
-    mongoose.connect("mongodb+srv://GaiaMaria8:gaia1999@cluster0.btpmh.mongodb.net/rlibrary", {
+    mongoose.connect(`mongodb+srv://${MongoPass}`, {
       useNewUrlParser: true,
       useUnifiedTopology: true,
     });

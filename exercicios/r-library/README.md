@@ -1,10 +1,17 @@
 # Exercício de Sala 🏫  
 
-## Nome do Exercicio
+## Explicando o que aprendi sobre banco de dados:
 
-- Explicação do exercício: Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam leo nibh, tempus sed rhoncus et, ultrices vitae orci.
-Donec erat mauris, laoreet in tortor vel, eleifend suscipit nibh. Lorem ipsum dolor sit amet, consectetur adipiscing elit.
-Aliquam leo nibh, tempus sed rhoncus et, ultrices vitae orci. Donec erat mauris, laoreet in tortor vel, eleifend suscipit nibh. 
+- O que aprendi nessa revisão: 
+
+
+- O Banco de dados remoto serve para armazenar dados em um local externo (em nuvem). Para acioná-lo, deve-se chamá-lo dentro do seu programa
+- Os arquivos de conexão com o banco de dados ficam localizados dentro da pasta database, separado de outros arquivos por questões de organização
+- Para que as conexões sejam feitas corretamente, é necessário instanciá-las em cada arquivo que contiver comandos dados ao banco de dados
+- Também é necessário fazer a organização do tipo MVC, pois é comum entre o meio da tecnologia, uma forma de deixar tudo organizado, modelo esse muito utilizado dentro do campo da programação
+- Dentro do arquivo model é inserido o modelo com os dados que se deseja colocar dentro do banco de dados, com cada elemento a ser inserido
+- No arquivo routes, é colocado as rotas que serão utilizadas para fazer o CRUD dentro da aplicação
+- É necessário instalar o mongo, o express o nodemon e o cors para rodar o programa.
 ---
 
 Terminou o exercício? Dá uma olhada nessa checklist e confere se tá tudo certinho, combinado?!

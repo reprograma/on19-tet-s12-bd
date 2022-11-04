@@ -10,8 +10,12 @@ const getAllBooks = async (req, res) => {
 };
 
 const getBookById = async (req, res) => {
-  try {   
-    const findBook = await BooksModel.findById(req.params.id);
+  try {
+    const { id } = req.params;
+    const findBook = await BooksModel.findById(id);
+    if (!findBook.length) {
+      return res.status(404).json({ message: "ID not found" });
+    }
     res.status(200).json(findBook);
   } catch (error) {
     res.status(500).json({ message: error.message });
@@ -21,23 +25,23 @@ const getBookById = async (req, res) => {
 const addNewBook = async (req, res) => {
   try {
     const {
-      title,
-      launchYear,
-      available,
-      publisher,
-      gender,
-      writer,
-      pages
+      titulo,
+      lancamento,
+      disponibilidade,
+      editora,
+      genero,
+      escritor,
+      paginas
     } = req.body;
 
     const newBook = new BooksModel({
-      title,
-      launchYear,
-      available,
-      publisher,
-      gender,
-      writer,
-      pages
+      titulo,
+      lancamento,
+      disponibilidade,
+      editora,
+      genero,
+      escritor,
+      paginas
     });
     const savedBook = await newBook.save();
     res

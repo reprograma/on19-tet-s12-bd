@@ -1,6 +1,6 @@
-const controller = require("../controllers/booksController"); // conecto ao controller
+const controller = require("../controllers/booksController");
 
-const express = require("express"); // importo o express
+const express = require("express");
 
 // funcao de rotas de express
 const router = express.Router();
@@ -13,4 +13,4 @@ router.post("/new", controller.addNewBook);
 router.patch("/:id", controller.updateBookById);
 router.delete("/:id", controller.deleteBook);
 
-module.exports = router; //exporto as rotas
+module.exports = router;

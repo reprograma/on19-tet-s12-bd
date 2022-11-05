@@ -21,7 +21,7 @@ const BookSchema = new mongoose.Schema(
     },
     publisher: {
       type: String,
-      required: true,
+      required: false,
     },
     gender: {
       type: String,

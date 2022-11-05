@@ -1,5 +1,9 @@
+require('dotenv').config();// importanto o dotenv como algo que executa uma ação e não uma variável
+
 const app = require("./src/app");
 
-const port = 1313;
+//connect();
+
+const port = 3000;
 
 app.listen(port, () => console.log(`Listening on port: ${port}`));

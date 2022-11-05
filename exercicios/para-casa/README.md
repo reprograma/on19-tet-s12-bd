@@ -2,6 +2,23 @@
 
 ## Banco de Dados
 
+- Resumo dos pontos que consegui compreender
+
+
+*  SQL é uma linguagem de programação usada por quase todos os bancos de dados para consultar, manipular, definir dados e fornecer controle de acesso.
+
+*  O MongoDB é um banco de dados orientado a documentos que possui código aberto e foi projetado para armazenar uma grande escala de dados, além de permitir que seja trabalhado de forma eficiente com grandes volumes. Ele é categorizado no banco de dados NoSQL (not only SQL) pois o armazenamento e a recuperação de dados no MongoDB não são feitas no formato de tabelas.
+
+* O termo 'NoSQL' se refere a tipos não relacionais de bancos de dados, e esses bancos de dados armazenam dados em um formato diferente das tabelas relacionais.
+ 
+ *  Schema é  uma coleção de objetos que tem o intuito de agrupar vários objetos de um departamento, área ou finalidade, seja por questões de organização de tabelas, Stored Procedures, ou por motivos de controle de acesso e segurança.
+
+
+
+
+
+
+
 Oie bonitas, como sabem a tarefa mudou, então vamos lá:
 - Entre no arquivo do README, dentro da pasta principal (on19-tet-s12-bd) 
 - E responda COM SUAS PALAVRAS o que você entendeu da aula de sabado:

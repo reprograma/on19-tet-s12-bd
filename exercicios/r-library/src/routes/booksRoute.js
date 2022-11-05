@@ -10,7 +10,7 @@ const router = express.Router();
 router.get("/all", controller.getAllBooks);
 router.get("/:id", controller.getBookById);
 router.post("/new", controller.addNewBook);
-router.patch("/:id", controller.updateBookById);
+router.put("/:id", controller.updateBookById);
 router.delete("/:id", controller.deleteBook);
 
-module.exports = router; //exporto as rotas
+module.exports = router;

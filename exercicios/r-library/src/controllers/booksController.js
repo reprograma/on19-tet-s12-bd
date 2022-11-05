@@ -6,11 +6,11 @@ const getAllBooks = async (req, res) => {
     res.status(200).json(allBooks);
   } catch {
     res.status(500).json({ message: error.message });
-  };
+  }
 };
 
 const getBookById = async (req, res) => {
-  try {   
+  try {
     const findBook = await BooksModel.findById(req.params.id);
     res.status(200).json(findBook);
   } catch (error) {
@@ -20,15 +20,8 @@ const getBookById = async (req, res) => {
 
 const addNewBook = async (req, res) => {
   try {
-    const {
-      title,
-      launchYear,
-      available,
-      publisher,
-      gender,
-      writer,
-      pages
-    } = req.body;
+    const { title, launchYear, available, publisher, gender, writer, pages } =
+      req.body;
 
     const newBook = new BooksModel({
       title,
@@ -37,7 +30,7 @@ const addNewBook = async (req, res) => {
       publisher,
       gender,
       writer,
-      pages
+      pages,
     });
     const savedBook = await newBook.save();
     res
@@ -46,12 +39,14 @@ const addNewBook = async (req, res) => {
   } catch (error) {
     console.error(error);
     res.status(500).json({ message: error.message });
-  };
+  }
 };
 
 const updateBookById = async (req, res) => {
   try {
-    const {
+    const { title, launchYear, available, publisher, gender, writer, pages } =
+      req.body;
+    const updateBook = await BooksModel.findByIdAndUpdate(req.params.id, {
       title,
       launchYear,
       available,
@@ -59,24 +54,12 @@ const updateBookById = async (req, res) => {
       gender,
       writer,
       pages,
-    } = req.body;
-    const updateBook = await BooksModel.findByIdAndUpdate(
-      req.params.id,
-      {
-        title,
-        launchYear,
-        available,
-        publisher,
-        gender,
-        writer,
-        pages,
-      }
-    );
+    });
     res.status(200).json(updateBook);
   } catch {
-  console.error(error);
-  res.status(500).json({ message: error.message });
-}
+    console.error(error);
+    res.status(500).json({ message: error.message });
+  }
 };
 
 const deleteBook = async (req, res) => {
@@ -85,14 +68,25 @@ const deleteBook = async (req, res) => {
     const findBooks = await BooksModel.findById(id);
 
     if (findBooks == null) {
-      return res.status(404).json({ message: `Book with id ${id} not found` })
-    };
+      return res.status(404).json({ message: `Book with id ${id} not found` });
+    }
     await findBooks.remove();
-    res.status(200).json({ message: `Book with id ${id} was successfully deleted` });
+    res
+      .status(200)
+      .json({ message: `Book with id ${id} was successfully deleted` });
   } catch (error) {
     res.status(500).json({ message: error.message });
-  };
+  }
 };
+
+/**
+ *Rota GET: Crie um rota que encontre um livro pelo titulo
+- Rota de Patch: Crie um rota que atualize as informações de um determinado livro utilizando de parâmetro o ID
+- Rota de Delete: Crie um rota que delete um livro cadastrado pelo ID
+- Rota GET:Crie um rota que encontre uma editora pelo estado da sede
+- Rota de POST: Crie um rota que crie uma nova editora
+- Rota de PATCH: Crie um rota que atualize as informações de um editora utilizando de parâmetro o ID 
+ */
 
 module.exports = {
   getAllBooks,

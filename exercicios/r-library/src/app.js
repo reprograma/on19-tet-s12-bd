@@ -1,7 +1,7 @@
-const express = require("express"); // importo o express
-const cors = require("cors"); // importo o cors
-const mongoose = require("./database/mongooseConnect"); // conecto a pasta do Mongo
-const booksRoutes = require("./routes/booksRoute"); // conecto as rotas
+const express = require("express");
+const cors = require("cors");
+const mongoose = require("./database/mongooseConnect");
+const booksRoutes = require("./routes/booksRoute");
 
 const app = express();
 
